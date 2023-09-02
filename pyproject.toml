@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = ""
+authors = ["Jackson Santos <jmrsnt@icloud.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.scripts]
+autoconnect = "src.autoconnect:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pywifi = "^1.1.12"
+pythonping = "^1.1.4"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
